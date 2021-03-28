@@ -21,45 +21,24 @@ public final class Jbuttons extends JButton{
     ImageIcon imagen = null; 
     private final Dimension dm = new Dimension(100,30); //tamaño del boton
     private final BorderLineRound borde = new BorderLineRound((Color.lightGray.darker()),true);
-    
-    
-       
-    
+     
+    //inicio del componente
     public Jbuttons(){
+       
         setText(nombre);
-        
-        
-         this.setIcon(imagen);
+        this.setIcon(imagen);
         setBorder(borde);//pone borde
-        setPreferredSize(dm);
-        setSize(dm);
+        setPreferredSize(dm);//tamaño del boton
+        setSize(dm);//tamaño del boton
         
         setOpaque(true);
         
-        setFont(new Font("Tahoma",Font.BOLD,12));
+        setFont(new Font("Tahoma",Font.BOLD,12));//tipo de letra
       
-        setForeground(Color.BLACK);
-        
-        
+        setForeground(Color.BLACK);//color de letra    
     }
-    
-    
-   
-   
+       
     
 } 
- 
-
-     
-      
- 
- 
- 
-
- /*javax.swing.ImageIcon  imagen = new javax.swing.ImageIcon(getClass().getResource("/imagenes/menu.png"));
-
- javax.swing.Icon icono = new javax.swing.ImageIcon(imagen.getImage().getScaledInstance(this.getWidth(), this.getHeight(),java.awt.Image.SCALE_DEFAULT));
-     this.setIcon(icono);
-     this.updateUI(); */
     
 
