@@ -1,4 +1,3 @@
-
 package JTextField;
 
 import java.awt.Color;
