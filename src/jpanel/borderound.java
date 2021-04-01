@@ -22,14 +22,14 @@ import javax.swing.border.AbstractBorder;
 public class borderound  extends AbstractBorder{
       
     
-    private int arcw=30;//ancho 
-    private int arch=30;//largo del componente
+    private int arcw=30;
+    private int arch=30;
     
-    /* public borderound(int arcw,int arch){
+     public borderound(int arcw,int arch){
       this.arch = arch;
       this.arcw = arcw;
      
-     }*/
+     }
     
     @Override
     public void paintBorder(Component c, Graphics g, int x, int y, int width, int height) {

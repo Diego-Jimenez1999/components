@@ -18,7 +18,7 @@ public class Jpanel extends JPanel{
     private int arch=30;
 
   
-    public  borderound borde =new borderound();
+    private final borderound borde =new borderound(arcw,arch);
     
     public Jpanel(){
         super();
