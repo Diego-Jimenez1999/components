@@ -21,7 +21,7 @@ public final class Jbuttons extends JButton{
     ImageIcon imagen = null; 
     private final Dimension dm = new Dimension(100,30); //tamaño del boton
     private final BorderLineRound borde = new BorderLineRound((Color.lightGray.darker()),true);
-     
+    
     //inicio del componente
     public Jbuttons(){
        

@@ -42,11 +42,12 @@ public class Jpanel extends JPanel{
 
     public void setArcw(int arcw) {
         this.arcw = arcw;
-
+        borde.setArcw(arcw);
     }
     
     public void setArch(int arch) {
          this.arch = arch;
+         borde.setArch(arch);
     } 
    
     

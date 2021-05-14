@@ -22,14 +22,18 @@ import javax.swing.border.AbstractBorder;
 public class borderound  extends AbstractBorder{
       
     
-    private int arcw=30;
-    private int arch=30;
+    private float arcw=30;
+    private float arch=30;
+    private final RenderingHints antialisasing = new  RenderingHints( RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON); 
     
-     public borderound(int arcw,int arch){
-      this.arch = arch;
-      this.arcw = arcw;
-     
-     }
+    public borderound(float arch, float arcw) {
+        this.arch = arch;
+        this.arcw = arcw;
+    }
+
+    public borderound() {
+
+    }
     
     @Override
     public void paintBorder(Component c, Graphics g, int x, int y, int width, int height) {
@@ -62,7 +66,24 @@ public class borderound  extends AbstractBorder{
 
     }
     
+    public float getArch() {
+        return arch;
+    }
+
+    public float getArcw() {
+        return arcw;
+    }
+
+    public void setArch(float arch) {
+        this.arch = arch;
+    }
+
+    public void setArcw(float arcw) {
+        this.arcw = arcw;
+    }
+
+   
      
     
-   private final RenderingHints antialisasing = new  RenderingHints( RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);  
+   
 }

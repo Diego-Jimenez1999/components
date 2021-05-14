@@ -39,7 +39,7 @@ public class JPassword_BR extends JPasswordField{
         setHorizontalAlignment(CENTER);//lo pone en el centro
         setFont(new Font("Century Gothic",0,12));
         setEchoChar('•');
-        
+       
         addFocusListener(new FocusListener(){
             
             @Override
@@ -50,9 +50,10 @@ public class JPassword_BR extends JPasswordField{
             @Override
             public void focusLost(FocusEvent e) {
                 txtFocuslost(e);
-                setEchoChar('*');
+                setEchoChar('•');
                 chek.setIcon(new ImageIcon(getClass().getResource("/Jpassword/Ojo_Desactivado.png")));
                 chek.setSelected(false);    
+                
             }
             
         });
@@ -79,8 +80,7 @@ public class JPassword_BR extends JPasswordField{
             public void mouseExited(MouseEvent e){
                 
                 if(chek.isSelected()){
-                    chek.setIcon(new ImageIcon(getClass().getResource("/Jpassword/ojo_Activado.png"))); 
-                   //chek.setIcon(new ImageIcon(getClass().getResource("/Img/Ojo_Desactivado.png")));    
+                    chek.setIcon(new ImageIcon(getClass().getResource("/Jpassword/ojo_Activado.png")));    
                 }else{
                    chek.setIcon(new ImageIcon(getClass().getResource("/Jpassword/Ojo_Desactivado.png")));
                    
@@ -101,7 +101,7 @@ public class JPassword_BR extends JPasswordField{
                 setEchoChar((char)0);
                 requestFocus();
             }else{
-             setEchoChar('*');
+             setEchoChar('•');
             }
         });
     }    
