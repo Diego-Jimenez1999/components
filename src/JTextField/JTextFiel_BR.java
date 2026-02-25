@@ -15,6 +15,16 @@ public class JTextFiel_BR extends JTextField{
     private final Dimension dm = new Dimension(250,28);
     private final BorderLineRound borde = new BorderLineRound((Color.lightGray.darker()),true);
     
+    private Color color_G = new Color(109,109,109);
+
+    public Color getColor_G() {
+        return color_G;
+    }
+
+    public void setColor_G(Color color_G) {
+        this.color_G = color_G;
+    }
+    
     public JTextFiel_BR(){
         setOpaque(true);
         setBorder(borde);
@@ -37,7 +47,7 @@ public class JTextFiel_BR extends JTextField{
     }
     
     public void txtFocusGaided(FocusEvent evy){
-        setBorder(new BorderLineRound(Color.lightGray,true));  
+        setBorder(new BorderLineRound(color_G,true));  
     }
     
     public void txtFocuslost(FocusEvent evy){
