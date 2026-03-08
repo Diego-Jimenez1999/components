@@ -22,7 +22,7 @@ src
  └── demo
  ## Preview
 
-![UI Components](preview/components-preview.png)
+![Demo](preview/demo.gif)
 
 ## Technologies
 
