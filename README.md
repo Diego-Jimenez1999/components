@@ -14,4 +14,24 @@ This project provides a set of customizable components designed to create modern
 
 ## Project Structure
 
+src
+ ├── components
+ ├── borders
+ ├── theme
+ ├── resources
+ └── demo
+ ## Preview
+
 ![UI Components](preview/components-preview.png)
+
+## Technologies
+
+- Java
+- Swing
+- NetBeans
+- Git
+
+## Author
+
+Diego Jimenez
+
